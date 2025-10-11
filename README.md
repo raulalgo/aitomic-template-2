@@ -6,11 +6,19 @@ A system to document UI libraries quickly and integrated with the registry. To g
 pnpm create astro@latest -- --template raulalgo/aitomic-template-2
 ```
 
-Then init your shadcn and start adding components
+Then init your shadcn and start adding components:
+
+```sh
+pnpm dlx shadcn@latest init
+```
+
+```sh
+pnpm dlx shadcn@latest add button
+```
 
 # Coming soon...
 
--[ ] Even easier integration with the docs
+- Even easier integration with the docs
 
 <!-- # Astro with Tailwind
 
