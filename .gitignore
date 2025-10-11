@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# content
+src/components/ui/
+src/content/components/button.mdx
