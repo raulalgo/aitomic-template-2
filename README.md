@@ -1,4 +1,18 @@
-# Astro with Tailwind
+# tomic.design
+
+A system to document UI libraries quickly and integrated with the registry. To get started do:
+
+```sh
+pnpm create astro@latest -- --template raulalgo/aitomic-template-2
+```
+
+Then init your shadcn and start adding components
+
+# Coming soon...
+
+-[ ] Even easier integration with the docs
+
+<!-- # Astro with Tailwind
 
 ```sh
 pnpm create astro@latest -- --template with-tailwindcss
@@ -10,4 +24,4 @@ pnpm create astro@latest -- --template with-tailwindcss
 
 Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. This example showcases how to style your Astro project with Tailwind.
 
-For complete setup instructions, please see our [Tailwind Integration Guide](https://docs.astro.build/en/guides/integrations-guide/tailwind).
+For complete setup instructions, please see our [Tailwind Integration Guide](https://docs.astro.build/en/guides/integrations-guide/tailwind). -->
