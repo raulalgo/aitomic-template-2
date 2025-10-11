@@ -1,5 +1,6 @@
 ---
 import "../../styles/global.css";
+import Layout from "../../layouts/main.astro";
 import { getCollection, type CollectionEntry, render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -34,22 +35,16 @@ const { item, collectionName } = Astro.props as Props;
 const { Content } = await render(item);
 ---
 
-<html>
+<!-- <html>
   <head>
     <title>{item.data.title || `${collectionName} - ${item.slug}`}</title>
     <meta name="description" content={item.data.description} />
   </head>
   <body>
-    <article>
-      <header>
-        <h1>{item.data.title || item.slug}</h1>
-        {item.data.description && <p>{item.data.description}</p>}
-        <div>
-          <span>Collection: {collectionName}</span>
-          {item.data.status && <span>Status: {item.data.status}</span>}
-        </div>
-      </header>
-      <Content />
-    </article>
-  </body>
-</html>
+    <article> -->
+<Layout title={item.data.title || item.slug}>
+  <Content />
+</Layout>
+
+<!-- </body>
+</html> -->
