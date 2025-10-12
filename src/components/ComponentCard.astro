@@ -1,0 +1,27 @@
+---
+// ComponentCard - Isolates shadcn components with their required global.css
+// Use this to embed UI components in MDX pages without style conflicts
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  class?: string;
+}
+
+const { title, class: className = "" } = Astro.props;
+---
+
+<div class={`component-card not-prose my-8 ${className}`}>
+  {
+    title && (
+      <h3 class="text-sm font-semibold text-muted-foreground mb-4 px-1">
+        {title}
+      </h3>
+    )
+  }
+  <div
+    class="component-preview p-6 rounded-lg border bg-card flex items-center justify-center gap-4 flex-wrap min-h-[200px]"
+  >
+    <slot />
+  </div>
+</div>

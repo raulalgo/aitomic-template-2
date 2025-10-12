@@ -6,6 +6,7 @@ source: /src/components/ui/button.tsx
 ---
 
 import { Button } from "@/components/ui/button.tsx";
+import ComponentCard from "@/components/ComponentCard.astro";
 
 ## How to cook a button
 
@@ -13,6 +14,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet a nisl 
 
 Pellentesque molestie vehicula rutrum. Aliquam erat volutpat. Proin ac massa venenatis, egestas tortor ut, convallis augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec tempus luctus diam at porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque bibendum dapibus neque, nec elementum velit condimentum ac.
 
-<Button>Click me</Button>
-<Button variant="secondary">Click me</Button>
-<Button variant="destructive">Click me</Button>
+<ComponentCard title="Button Variants">
+  <Button>Click me</Button>
+  <Button variant="secondary">Secondary</Button>
+  <Button variant="destructive">Destructive</Button>
+  <Button variant="outline">Outline</Button>
+  <Button variant="ghost">Ghost</Button>
+</ComponentCard>
