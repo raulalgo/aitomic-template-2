@@ -17,10 +17,6 @@ const baseSchema = z.object({
   categories: z.array(z.string()).optional(),
 });
 
-const componentSchema = baseSchema.extend({
-  type: z.literal("component"),
-});
-
 const blockSchema = baseSchema.extend({
   type: z.literal("block"),
 });
@@ -32,7 +28,7 @@ const starterSchema = baseSchema.extend({
 export const collections = {
   components: defineCollection({
     type: "content",
-    schema: componentSchema,
+    schema: baseSchema,
   }),
   blocks: defineCollection({
     type: "content",
