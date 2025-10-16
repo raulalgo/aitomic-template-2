@@ -27,4 +27,3 @@ components.json
 package-lock.json
 /src/content/components/button.mdx
 /src/components/ui/button.tsx
-/src/styles/global.css
