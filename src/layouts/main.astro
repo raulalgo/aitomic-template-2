@@ -17,18 +17,21 @@ const jsonUrl = collection && slug ? `/${collection}/r/${slug}.json` : null;
           <h1 class="text-2xl font-bold">{title}</h1>
           {
             jsonUrl && (
-              <a href={jsonUrl} class="text-sm text-gray-500">
-                Registry
-              </a>
-               <a href={`https://v0.app/chat/api/open?url=${jsonUrl}`}><img
-                  src="https://v0.app/chat-static/button.svg"
-                  alt="Open in v0"
-                  width="99"
-                  height="32"
-                /></a>
+              <div>
+                <a href={jsonUrl} class="text-sm underline text-blue-500">
+                  Registry
+                </a>
+                <a href={`https://v0.app/chat/api/open?url=${jsonUrl}`}>
+                  <img
+                    src="https://v0.app/chat-static/button.svg"
+                    alt="Open in v0"
+                    width="99"
+                    height="32"
+                  />
+                </a>
+              </div>
             )
           }
-         
         </div>
         <article class="prose">
           <slot />
